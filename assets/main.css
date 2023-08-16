@@ -4233,7 +4233,7 @@ textarea.form-control-lg {
   --bs-accordion-btn-icon-width: 1.25rem;
   --bs-accordion-btn-icon-transform: rotate(-180deg);
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='19' height='4' viewBox='0 0 19 4' fill='%23ff0000'%3e%3cpath d='M1.37109 0.6C0.735966 0.6 0.221094 1.11487 0.221094 1.75C0.221094 2.38513 0.735967 2.9 1.37109 2.9H17.3711C18.0062 2.9 18.5211 2.38513 18.5211 1.75C18.5211 1.11487 18.0062 0.6 17.3711 0.6H1.37109Z' fill='white' stroke='white' stroke-width='0.3' stroke-linecap='round'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='19' height='4' viewBox='0 0 19 4' fill='%230d3745'%3e%3cpath d='M1.37109 0.6C0.735966 0.6 0.221094 1.11487 0.221094 1.75C0.221094 2.38513 0.735967 2.9 1.37109 2.9H17.3711C18.0062 2.9 18.5211 2.38513 18.5211 1.75C18.5211 1.11487 18.0062 0.6 17.3711 0.6H1.37109Z' fill='white' stroke='white' stroke-width='0.3' stroke-linecap='round'/%3e%3c/svg%3e");
   --bs-accordion-btn-focus-border-color: #86b7fe;
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
   --bs-accordion-body-padding-x: 1.25rem;
@@ -13020,7 +13020,6 @@ progress {
 }
 body {
   background-color: aquamarine;
-  min-height: 800px;
 }
 
 #section {
@@ -13030,8 +13029,7 @@ body {
 }
 
 .custom-spacing {
-  margin-top: 30px; /* Atur jarak atas */
-  margin-bottom: 20px; /* Atur jarak bawah */
+  height: 7rem;
 }
 
 /*# sourceMappingURL=main.css.map */

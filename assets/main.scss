@@ -28,7 +28,6 @@ $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/20
 
 body {
   background-color: aquamarine;
-  min-height: 800px;
 }
 #section {
   background-color: white;
@@ -37,9 +36,5 @@ body {
 }
 
 .custom-spacing {
-  margin-top: 30px; /* Atur jarak atas */
-  margin-bottom: 20px; /* Atur jarak bawah */
-}
-
-a {
+  height: 7rem;
 }
