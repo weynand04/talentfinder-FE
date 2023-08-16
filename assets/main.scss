@@ -4,12 +4,27 @@
 // Custom class
 $theme-colors: (
   "primary": #0d3745,
-  "danger": #f5f5f5,
 );
+
+$accordion-icon-active-color: #ff0000;
+
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='19' height='4' viewBox='0 0 19 4' fill='#{$accordion-icon-active-color}'><path d='M1.37109 0.6C0.735966 0.6 0.221094 1.11487 0.221094 1.75C0.221094 2.38513 0.735967 2.9 1.37109 2.9H17.3711C18.0062 2.9 18.5211 2.38513 18.5211 1.75C18.5211 1.11487 18.0062 0.6 17.3711 0.6H1.37109Z' fill='white' stroke='white' stroke-width='0.3' stroke-linecap='round'/></svg>");
+
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='43' viewBox='0 0 42 43' fill='#0d3745'><rect x='0.0151367' y='0.989258' width='41.5' height='41.5' rx='8' fill='#F7F7FF'/><path d='M20.7651 12.5893C20.13 12.5893 19.6151 13.1041 19.6151 13.7393V29.7393C19.6151 30.3744 20.13 30.8893 20.7651 30.8893C21.4003 30.8893 21.9151 30.3744 21.9151 29.7393V13.7393C21.9151 13.1041 21.4003 12.5893 20.7651 12.5893Z' fill='#0D3745' stroke='#F3F2ED' stroke-width='0.3' stroke-linecap='round'/><path d='M12.7651 20.5893C12.13 20.5893 11.6151 21.1041 11.6151 21.7393C11.6151 22.3744 12.13 22.8893 12.7651 22.8893H28.7651C29.4003 22.8893 29.9151 22.3744 29.9151 21.7393C29.9151 21.1041 29.4003 20.5893 28.7651 20.5893H12.7651Z' fill='#0D3745' stroke='#F3F2ED' stroke-width='0.3' stroke-linecap='round'/></svg>");
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-// additional class
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// 4. Include any optional Bootstrap components as you like
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
 
 body {
   background-color: aquamarine;
@@ -24,4 +39,7 @@ body {
 .custom-spacing {
   margin-top: 30px; /* Atur jarak atas */
   margin-bottom: 20px; /* Atur jarak bawah */
+}
+
+a {
 }
