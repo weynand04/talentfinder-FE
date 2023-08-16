@@ -1,0 +1,27 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Custom class
+$theme-colors: (
+  "primary": #0d3745,
+  "danger": #f5f5f5,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// additional class
+
+body {
+  background-color: aquamarine;
+  min-height: 800px;
+}
+#section {
+  background-color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.custom-spacing {
+  margin-top: 30px; /* Atur jarak atas */
+  margin-bottom: 20px; /* Atur jarak bawah */
+}
