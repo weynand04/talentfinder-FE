@@ -15,22 +15,24 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
       <div class="container">
-        <a class="navbar-brand" href="../talent-finder/index.html">TALENTFINDER</a>
+        <a class="navbar-brand" href="../index.html">TALENTFINDER</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link" href="../talent-finder/pages/faq-pages.html">FAQ</a>
-            <a class="nav-link" href="../talent-finder/pages/contact-pages.html">Contact US</a>
-            <a class="nav-link" href="../talent-finder/pages/about-pages.html">About Us</a>
+            <a class="nav-link" href="faq-pages.html">FAQ</a>
+            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="about-pages.html">About Us</a>
           </div>
         </div>
       </div>
     </nav>
     <!-- akhir navbar -->
-    <div class="container-fluid bg-white">
-      <div id="section" class="container pb-4">
+
+    <div class="container-fluid custom-section">
+      <div class="custom-spacing"></div>
+      <div id="section" class="container" style="height: 75vh">
         <div class="row justify-content-center text-center">
           <div class="col-4">
             <h1 class="mb-4 text-primary">CONTACT US</h1>
@@ -61,7 +63,7 @@
     <!-- Footer -->
     <footer class="mt-4 bg-primary text-white text-center text-lg-start">
       <!-- Grid container -->
-      <div class="container p-4">
+      <div class="container p-4 d-none d-md-block">
         <!--Grid row-->
         <div class="row">
           <!--Grid column-->
@@ -78,13 +80,13 @@
 
             <ul class="list-unstyled mb-0">
               <li>
-                <a href="#!" class="text-white">About Us</a>
+                <a href="about-pages.html" class="text-white">About Us</a>
               </li>
               <li>
-                <a href="#!" class="text-white">FAQ</a>
+                <a href="faq-pages.html" class="text-white">FAQ</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Contact</a>
+                <a href="contact-pages.html" class="text-white">Contact</a>
               </li>
             </ul>
           </div>
@@ -114,7 +116,7 @@
 
             <ul class="list-unstyled">
               <li>
-                <a href="#!" class="text-white">Contact</a>
+                <a href="contact-pages.html" class="text-white">Contact</a>
               </li>
             </ul>
           </div>
@@ -149,7 +151,11 @@
       </div>
       <!-- Copyright -->
     </footer>
-    <!-- Akhir Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Akhir Footer FIX -->
   </body>
 </html>

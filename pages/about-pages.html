@@ -15,24 +15,26 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
       <div class="container">
-        <a class="navbar-brand" href="../talent-finder/index.html">TALENTFINDER</a>
+        <a class="navbar-brand" href="../index.html">TALENTFINDER</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link" href="../talent-finder/pages/faq-pages.html">FAQ</a>
-            <a class="nav-link" href="../talent-finder/pages/contact-pages.html">Contact US</a>
-            <a class="nav-link" href="../talent-finder/pages/about-pages.html">About Us</a>
+            <a class="nav-link" href="faq-pages.html">FAQ</a>
+            <a class="nav-link" href="contact-pages.html">Contact Us</a>
+            <a class="nav-link" href="#">About Us</a>
           </div>
         </div>
       </div>
     </nav>
     <!-- akhir navbar -->
-    <div class="container-fluid bg-white">
-      <!-- section-1 // hero -->
+
+    <!-- section-1 // hero -->
+    <div class="container-fluid custom-section">
       <div id="section" class="container">
         <div class="row justify-content-center text-center">
+          <div class="custom-spacing"></div>
           <div class="col-4">
             <h1 class="mb-4 text-primary">ABOUT US</h1>
           </div>
@@ -41,10 +43,34 @@
       <!-- akhir section-1 // hero -->
     </div>
 
+    <div id="section" class="container-fluid custom-section">
+      <h2>Our Mission</h2>
+      <p>
+        Our mission is simple yet profound: to empower individuals to discover their potential and find their perfect career path. We strive to provide a seamless and efficient platform where job seekers and employers can meet, interact,
+        and forge meaningful connections. Through innovation and dedication, we aim to redefine the way recruitment is experienced.
+      </p>
+      <img src="../public/images/p-about1.png" alt="" />
+      <img src="../public/images/p-about2.png" alt="" />
+      <img src="../public/images/p-about3.png" alt="" />
+    </div>
+
+    <div class="custom-spacing"></div>
+
+    <div id="section" class="container-fluid custom-section">
+      <img src="../public/images/p-about4.png" alt="" />
+      <img src="../public/images/p-about5.png" alt="" />
+      <img src="../public/images/p-about6.png" alt="" />
+      <h2>Join Us on the Journey</h2>
+      <p>
+        Whether you're a recent graduate stepping into the workforce or a seasoned professional seeking new horizons, TalentFinders is here to guide you. We invite you to explore our platform, discover new possibilities, and embark on a
+        journey towards realizing your full potential. Join us in shaping the future of recruitment, where dreams are nurtured, and success stories are created.
+      </p>
+    </div>
+
     <!-- Footer -->
     <footer class="mt-4 bg-primary text-white text-center text-lg-start">
       <!-- Grid container -->
-      <div class="container p-4">
+      <div class="container p-4 d-none d-md-block">
         <!--Grid row-->
         <div class="row">
           <!--Grid column-->
@@ -61,13 +87,13 @@
 
             <ul class="list-unstyled mb-0">
               <li>
-                <a href="#!" class="text-white">About Us</a>
+                <a href="about-pages.html" class="text-white">About Us</a>
               </li>
               <li>
-                <a href="#!" class="text-white">FAQ</a>
+                <a href="faq-pages.html" class="text-white">FAQ</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Contact</a>
+                <a href="contact-pages.html" class="text-white">Contact</a>
               </li>
             </ul>
           </div>
@@ -97,7 +123,7 @@
 
             <ul class="list-unstyled">
               <li>
-                <a href="#!" class="text-white">Contact</a>
+                <a href="contact-pages.html" class="text-white">Contact</a>
               </li>
             </ul>
           </div>
@@ -132,7 +158,11 @@
       </div>
       <!-- Copyright -->
     </footer>
-    <!-- Akhir Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Akhir Footer FIX -->
   </body>
 </html>
