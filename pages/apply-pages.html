@@ -29,47 +29,177 @@
       </div>
     </nav>
     <!-- akhir navbar -->
+
     <div class="custom-spacing"></div>
+
     <div id="section" class="container-fluid custom-section">
       <div class="container">
-        <div class="row text-center">
-          <div class="col-12">
-            <h1>Title Jobs</h1>
+        <div class="row align-items-center">
+          <div class="col-md-12 text-center">
+            <h1>TITLE JOB</h1>
           </div>
+        </div>
 
-          <div class="row text-start">
-            <div class="col-4">
-              <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Personal Information</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Education</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Work Experience</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Skils</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Finish</a>
-                </li>
-              </ul>
+        <div class="row pb-4">
+          <div class="col-4">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="#personalInfo1Card">Personal Info 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#personalInfo2Card">Personal Info 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#educationCard">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#workExperienceCard">Work Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#skillsCard">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#finishCard">Finish</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-8">
+            <div class="card bg-primary" id="personalInfo1Card">
+              <div class="card-body">
+                <h5 class="card-title text-white">Personal Information 1</h5>
+                <form>
+                  <input type="text" class="form-control mb-2" id="idCardNumber" placeholder="ID Card number" />
+                  <input type="text" class="form-control mb-2" id="name" placeholder="Full Name" required />
+                  <input type="email" class="form-control mb-2" id="email" placeholder="Email" required />
+                  <input type="email" class="form-control mb-2" id="nohp" placeholder="Phone Number" required />
+                  <button type="button" class="btn btn-secondary float-end" onclick="showPersonalInfo2()">Next</button>
+                </form>
+              </div>
             </div>
-            <div class="col-8">
-              <div class="card">
-                <input type="input" class="form-control" id="exampleFormControlInput1" placeholder="ID Card" />
-                <input type="input" class="form-control" id="exampleFormControlInput1" placeholder="Full Name" />
-                <input type="input" class="form-control" id="exampleFormControlInput1" placeholder="Phone Number" />
-                <input type="input" class="form-control" id="exampleFormControlInput1" placeholder="Email Addres" />
-                <button type="submit" class="btn btn-primary mb-3">Next</button>
+
+            <div class="card bg-primary d-none" id="personalInfo2Card">
+              <div class="card-body">
+                <h5 class="card-title">Personal Information 2</h5>
+                <form>
+                  <div class="mb-3">
+                    <input type="text" class="form-control" id="tempatLahir" name="tempatLahir" placeholder="Tempat Lahir" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="tanggalLahir" class="form-label">Tanggal Lahir</label>
+                    <input type="date" class="form-control" id="tanggalLahir" name="tanggalLahir" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="jenisKelamin" class="form-label">Jenis Kelamin</label>
+                    <select class="form-select" id="jenisKelamin" name="jenisKelamin">
+                      <option value="laki-laki">Laki-laki</option>
+                      <option value="perempuan">Perempuan</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="alamatKTP" class="form-label">Alamat KTP</label>
+                    <textarea class="form-control" id="alamatKTP" name="alamatKTP" placeholder="Alamat KTP" rows="2"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="alamatDomisili" class="form-label">Alamat Domisili (jika berbeda)</label>
+                    <textarea class="form-control" id="alamatDomisili" name="alamatDomisili" placeholder="Alamat Domisili" rows="2"></textarea>
+                  </div>
+                  <button type="button" class="btn btn-secondary float-end" onclick="showEducation()">Next</button>
+                </form>
+              </div>
+            </div>
+
+            <div class="card bg-primary d-none" id="educationCard">
+              <div class="card-body">
+                <h5 class="card-title">Last Education</h5>
+                <form>
+                  <div class="mb-3">
+                    <select class="form-select" id="jenjang" name="jenjang">
+                      <option value="SD">SD</option>
+                      <option value="SMP">SMP</option>
+                      <option value="SMA">SMA</option>
+                      <option value="D3">D3</option>
+                      <option value="S1">S1</option>
+                      <option value="S2">S2</option>
+                      <option value="S3">S3</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <input type="text" class="form-control" id="namaInstitusi" name="namaInstitusi" />
+                  </div>
+                  <div class="mb-3">
+                    <input type="text" class="form-control" id="jurusan" name="jurusan" />
+                  </div>
+                  <div class="mb-3">
+                    <input type="number" class="form-control" id="tahunLulus" name="tahunLulus" />
+                  </div>
+                  <button type="button" class="btn btn-secondary float-end" onclick="showWorkExperience()">Next</button>
+                </form>
+              </div>
+            </div>
+
+            <div class="card bg-primary d-none" id="workExperienceCard">
+              <div class="card-body">
+                <h5 class="card-title">Work Experience</h5>
+                <form>
+                  <div class="mb-3">
+                    <label for="namaPerusahaan" class="form-label">Nama Perusahaan</label>
+                    <input type="text" class="form-control" id="namaPerusahaan" name="namaPerusahaan" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="jabatan" class="form-label">Jabatan</label>
+                    <input type="text" class="form-control" id="jabatan" name="jabatan" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="tanggalMulai" class="form-label">Tanggal Mulai</label>
+                    <input type="date" class="form-control" id="tanggalMulai" name="tanggalMulai" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="tanggalSelesai" class="form-label">Tanggal Selesai</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="saatIni" name="saatIni" />
+                      <label class="form-check-label" for="saatIni"> Saat ini </label>
+                    </div>
+                    <input type="date" class="form-control" id="tanggalSelesai" name="tanggalSelesai" disabled />
+                  </div>
+                  <button type="button" class="btn btn-secondary float-end" onclick="showSkills()">Next</button>
+                </form>
+              </div>
+            </div>
+
+            <div class="card bg-primary d-none" id="skillsCard">
+              <div class="card-body">
+                <h5 class="card-title">Skills</h5>
+                <form>
+                  <div class="mb-3">
+                    <label for="keterampilanUtama" class="form-label">Keterampilan Utama</label>
+                    <textarea class="form-control" id="keterampilanUtama" name="keterampilanUtama" rows="3"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="keterampilanTambahan" class="form-label">Keterampilan Tambahan</label>
+                    <textarea class="form-control" id="keterampilanTambahan" name="keterampilanTambahan" rows="3"></textarea>
+                  </div>
+                  <button type="button" class="btn btn-secondary float-end" onclick="showFinish()">Next</button>
+                </form>
+              </div>
+            </div>
+
+            <div class="card bg-primary d-none" id="finishCard">
+              <div class="card-body">
+                <h5 class="card-title">Finish</h5>
+                <form>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="agreementCheck" required />
+                    <label class="form-check-label" for="agreementCheck"> I agree with the terms and conditions </label>
+                  </div>
+                  <button type="submit" class="btn btn-secondary float-center">Submit</button>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- Footer -->
     <footer class="mt-4 bg-primary text-white text-center text-lg-start">
       <!-- Grid container -->
@@ -165,6 +295,31 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+
+      function showPersonalInfo2() {
+        document.getElementById("personalInfo2Card").classList.remove("d-none");
+        document.getElementById("personalInfo1Card").classList.add("d-none");
+      }
+
+      function showEducation() {
+        document.getElementById("educationCard").classList.remove("d-none");
+        document.getElementById("personalInfo2Card").classList.add("d-none");
+      }
+
+      function showWorkExperience() {
+        document.getElementById("workExperienceCard").classList.remove("d-none");
+        document.getElementById("educationCard").classList.add("d-none");
+      }
+
+      function showSkills() {
+        document.getElementById("skillsCard").classList.remove("d-none");
+        document.getElementById("workExperienceCard").classList.add("d-none");
+      }
+
+      function showFinish() {
+        document.getElementById("finishCard").classList.remove("d-none");
+        document.getElementById("skillsCard").classList.add("d-none");
+      }
     </script>
     <!-- Akhir Footer FIX -->
   </body>
