@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="../assets/main.css" />
     <!-- Akhir MyCSS-->
 
+    <!-- New Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet" />
+    <!-- Akhir New Font -->
+
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- akhir animation -->
+
     <title>TalentFinder</title>
   </head>
   <body class="bg-primary text-primary">
@@ -326,23 +336,28 @@
         workExperienceCard.style.display = "none";
       }
 
+      // Fungsi button next di personal card
       function showEducationCard() {
         document.getElementById("educationCard").classList.remove("d-none");
         document.getElementById("personalInfoCard").classList.add("d-none");
         document.getElementById("naveducationCard").classList.remove("disabled");
       }
 
+      // Fungsi button next di education
       function showWorkExperience() {
         document.getElementById("workExperienceCard").classList.remove("d-none");
         document.getElementById("educationCard").classList.add("d-none");
         document.getElementById("navworkExperienceCard").classList.remove("disabled");
       }
 
+      // Fungsi button next di work experience
       function showFinish() {
         document.getElementById("finishCard").classList.remove("d-none");
         document.getElementById("workExperienceCard").classList.add("d-none");
         document.getElementById("navfinishCard").classList.remove("disabled");
       }
+
+      // Fungsi button finish di card finish
     </script>
   </body>
 </html>
