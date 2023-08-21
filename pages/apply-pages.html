@@ -320,8 +320,10 @@
         saatIniCheckbox.checked = false;
         tanggalSelesaiInput.disabled = true;
 
-        // Append the new work experience card
-        workExperienceCard.parentNode.appendChild(newWorkExperienceCard);
+        workExperienceCard.parentNode.replaceChild(newWorkExperienceCard, workExperienceCard);
+
+        // Hide the old work experience card
+        workExperienceCard.style.display = "none";
       }
 
       function showEducationCard() {
