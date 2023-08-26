@@ -1,5 +1,7 @@
 // Custom.scss
-// Option A: Include all of Bootstrap
+.test {
+  padding: 0%;
+}
 
 // Custom class
 $theme-colors: (
@@ -26,6 +28,7 @@ $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/20
 @import "../node_modules/bootstrap/scss/images";
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bs-stepper/dist/css/bs-stepper.css";
 
 body {
   font-family: "Poppins", sans-serif;
