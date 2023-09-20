@@ -32,8 +32,15 @@ $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/20
 
 body {
   font-family: "Poppins", sans-serif;
-}
 
+}
+body a{
+  text-decoration: none;
+}
+body footer a:hover{
+  text-decoration: underline;
+}
+  
 h1,
 h2,
 h3,
